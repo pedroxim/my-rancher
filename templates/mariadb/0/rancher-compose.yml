@@ -4,5 +4,22 @@
   description: "Mariadb server"
   uuid: mariadb-0
   minimum_rancher_version: v0.51.0
+  questions:
+    - variable: mysql_database
+      description: Database name
+      required: true
+      type: "string"
+    - variable: mysql_user
+      description: Mysql user
+      required: true
+      type: "string"
+    - variable: mysql_password
+      description: Mysql password
+      required: true
+      type: "string"
+    - variable: mysql_root_password
+      description: mysql_root_password
+      required: false
+      type: "string"
 
 mariadb:

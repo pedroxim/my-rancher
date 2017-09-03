@@ -4,9 +4,6 @@ mariadb:
   volumes:
     - schema.sql:/docker-entrypoint-initdb.d
   environment:
-{{- if eq .Values.mysql_allow_empty_password "yes"}}
-    MYSQL_ALLOW_EMPTY_PASSWORD: ${mysql_allow_empty_password}
-{{- end}}
 {{- if (.Values.mysql_database)}}
     MYSQL_DATABASE: ${mysql_database}
 {{- end}}
