@@ -1,0 +1,9 @@
+mariadb:
+  image: mariadb:10
+  volumes:
+    - schema.sql:/docker-entrypoint-initdb.d
+  environment:
+    - MYSQL_DATABASE=yolo
+    - MYSQL_USER=yolo
+    - MYSQL_PASSWORD=yolo
+    - MYSQL_ROOT_PASSWORD=root

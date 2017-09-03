@@ -1,0 +1,4 @@
+name: mariadb server
+description:
+version: 10
+category: backend
