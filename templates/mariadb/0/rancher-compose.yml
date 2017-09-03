@@ -7,18 +7,22 @@
   questions:
     - variable: mysql_database
       description: Database name
+      label: Mysql database
       required: true
       type: "string"
     - variable: mysql_user
       description: Mysql user
+      label: Mysql user
       required: true
       type: "string"
     - variable: mysql_password
       description: Mysql password
+      label: Mysql user password
       required: true
       type: "string"
     - variable: mysql_root_password
       description: mysql_root_password
+      label: Mysql root password
       required: false
       type: "string"
 
