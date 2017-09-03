@@ -1,8 +1,8 @@
 version: '2'
 mariadb:
-  image: mariadb:10
-  volumes:
-    - schema.sql:/docker-entrypoint-initdb.d
+  build:
+    context: .
+    dockerfile: dockerfile
   environment:
 {{- if (.Values.mysql_database)}}
     MYSQL_DATABASE: ${mysql_database}
