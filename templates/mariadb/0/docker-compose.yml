@@ -1,4 +1,4 @@
-version: '3'
+version: '2'
 mariadb:
   image: mariadb:10
   volumes:

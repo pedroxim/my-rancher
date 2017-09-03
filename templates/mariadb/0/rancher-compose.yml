@@ -1,4 +1,5 @@
-.catalog:
+version: '2'
+catalog:
   name: "Mariadb"
   version: 10
   description: "Mariadb server"
