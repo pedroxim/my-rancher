@@ -1,8 +1,5 @@
-version: '2'
 mariadb:
-  build:
-    context: .
-    dockerfile: dockerfile
+  build: ./dockerfile
   environment:
 {{- if (.Values.mysql_database)}}
     MYSQL_DATABASE: ${mysql_database}
